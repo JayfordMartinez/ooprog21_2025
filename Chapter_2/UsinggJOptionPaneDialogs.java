@@ -5,12 +5,10 @@ public class UsinggJOptionPaneDialogs {
         while (true) {
             
             String name = JOptionPane.showInputDialog(null, "Enter your name:");
-
             if (name == null) {
                 JOptionPane.showMessageDialog(null, "Program exited.");
                 break;
             }
-
             int choice = JOptionPane.showConfirmDialog(
                     null,
                     "Do you want your name to be displayed?",
@@ -22,7 +20,6 @@ public class UsinggJOptionPaneDialogs {
                 JOptionPane.showMessageDialog(null, "Your name is: " + name);
                 break; 
                  } else if (choice == JOptionPane.NO_OPTION || choice == JOptionPane.CANCEL_OPTION) {
-      
                 continue;
             } else if (choice == JOptionPane.CLOSED_OPTION) {
                 JOptionPane.showMessageDialog(null, "Program exited.");
@@ -30,4 +27,5 @@ public class UsinggJOptionPaneDialogs {
             }
         }
     }
+
 }
